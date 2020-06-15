@@ -188,8 +188,20 @@ $(document).ready(function () {
         else {
           e.slideUp();
         }
+    });
     /* footer slide end*/
-
+    $(".mob-menu").click(function (e) {
+        e.preventDefault();
+        e = $(".inner__list");
+        
+        if (!e.is(':visible')) {
+          e.slideDown();  
+          $(".mob-menu").text("Скрыть меню");
+        }
+        else {
+          e.slideUp();
+          $(".mob-menu").text("Меню");
+        }
       
   });
 

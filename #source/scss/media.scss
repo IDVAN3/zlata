@@ -194,6 +194,13 @@
 }
 
 @media (max-width: 640px) {
+    .wrapper-mob-menu{
+        display: flex;
+        justify-content: center;
+    }
+    .inner__list{
+        display: none;
+    }
     .inner-img{
         display: none;
     }
