@@ -201,8 +201,7 @@ $(document).ready(function () {
         else {
           e.slideUp();
           $(".mob-menu").text("Меню");
-        }
-      
-  });
+        }   
+     });
 
 });

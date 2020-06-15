@@ -1595,6 +1595,10 @@ input:-ms-input-placeholder {
   height: 100%;
 }
 
+.wrapper-mob-menu {
+  display: none;
+}
+
 .map {
   background-image: url(../img/map.png);
   background-position: 0 0;
