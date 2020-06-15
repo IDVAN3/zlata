@@ -1,0 +1,328 @@
+.icon{
+    display: block;
+    fill: #878380;
+    width: 13px;
+    height: 17px;
+}
+.icon-bottom{
+    position: absolute;
+    top: 3px;
+    right: 20px;
+
+    display: block;
+    width: 7px;
+    height: 7px;
+    fill: #000000;
+    transition: 0.4s;
+}
+.icon-gps{
+    display: block;
+    fill: #878380;
+    height: 20px;
+    width: 17px;
+}
+.icon-search{
+    display: block;
+    fill: #000000;
+    height: 28px;
+    width: 27px;
+}
+.icon-telephone{
+    display: block;
+    fill: #878380;
+    height: 17px;
+    width: 17px;
+}
+.icon-basket{
+    display: block;
+    fill: #000;
+    height: 24px;
+    width: 28px;
+}
+.header__link {
+    position: relative;
+    color: #000000;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.22px;
+    transition: 0.4s;
+
+    padding: 10px 0;
+}
+  
+.header__link:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    background: #d7b56d;
+    width: 0;
+    transition: 0.4s;
+}
+.header__link:hover{
+    color: #d7b56d;
+}
+.header__link.active{
+    color: #d7b56d;
+}
+.header__link.active:before {
+    width: 100%;  
+}
+.header__link:hover:before {
+    width: 100%;  
+}
+.red-color{
+    color: #982424;
+}
+.phone{
+    padding-top: 3px;
+}
+.wrapper-icons{
+    position: relative;
+}
+.count{
+    position: absolute;
+    top: -4px;
+    left: -8px;
+
+    color: #928e8d;
+    font-size: 12px;
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+.buy-links{
+    display: flex;
+}
+.wrapper-icons img{
+    width: 100%;
+}  
+
+.header {
+    background-color: #f6f6f3;
+    padding-bottom: 44px;
+    background-image: url(../img/header.png);
+    max-width: 100%;
+    position: relative;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    &__burger{
+        display: none;
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        li:not(:last-child){
+            padding-right: 60px;
+        }
+        
+    }
+}
+.header{
+    .wrapper-input{
+        padding-left: 23px;
+    }
+    .header-input{
+        padding: 0 0 17px 0;
+        width: 310px;
+        border-bottom: 1px solid #000000;
+        background-color: transparent;
+    }
+    .flex-top{
+        display: flex;
+        align-items: start;
+    }
+    input::-webkit-input-placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        color: #7d7876;
+        font-family: "Montserrat";
+        font-style: italic;
+      }
+    input::-moz-placeholder          {
+        font-size: 14px;
+        font-weight: 400;
+        color: #7d7876;
+        font-family: "Montserrat";
+        font-style: italic;
+        }/* Firefox 19+ */
+    input:-ms-input-placeholder      {
+        font-size: 14px;
+        font-weight: 400;
+        color: #7d7876;
+        font-family: "Montserrat";
+        font-style: italic;
+      }
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0 0 0;
+}
+.header-content-left{
+    display: flex;
+    flex-direction: column;
+    &__item{
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 73px;
+        .gps{
+            padding-left: 6px;
+        }
+    }
+}
+.wrapper-select{
+    display: flex;
+    position: relative;
+}
+.select-region{
+    padding-left: 10px;
+    padding-right: 20px;
+    text-decoration: underline;
+    font-size: 12px;
+    
+}
+.select-link{
+    padding-right: 20px;
+    color: #000;
+}
+.select-span{
+    padding-left: 31px;
+    color: #908d8a;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.header-content-right{
+    display: flex;
+    flex-direction: column;
+    &__item{
+        padding-bottom: 50px;
+        .info-telephone{
+            padding-left: 17px;
+        }
+        .wrapper-number-tel{
+            display: flex;
+        }
+        .wrapper-tel{
+            display: flex;
+            &__item:not(:last-child){
+                padding-right: 10px;
+            }
+        }
+        .header-tel{
+            font-family: "Montserrat";
+            font-weight: bold;
+            color: #000000;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .header-time{
+            font-family: "Montserrat";
+            font-style: italic;
+            line-height: 18px;
+            color: #7d7876;
+        }
+        .wrapper-bottom{
+            display: flex;
+            &__item{
+                display: flex;
+                align-items: center;
+            }
+            &__item:not(:last-child){
+                padding-right: 75px;
+            }
+            .header-info{
+                font-size: 12px;
+                color: #000000;
+                font-family: 'Montserrat';
+                font-weight: 300;
+
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.p-left{
+    padding-left: 17px;
+}
+.pad-left{
+    padding-left: 8px;
+}
+.topmenu{
+    position: relative;
+    display: flex;
+}
+.submenu {
+    padding: 0px 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    position: absolute;
+    top: 20px;
+    left: 10px;
+
+    display: none;
+    z-index: 5;
+    width: 180px;
+    max-height: 155px;
+    overflow: auto;
+    transform: rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: 0.4s;
+  }
+  .submenu::-webkit-scrollbar {
+    border-radius: 2px;
+    background-color: #f6de83;
+    opacity: 0.102;
+    width: 6px;
+    z-index: 1243;
+  }
+  .submenu::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #982424;
+    box-shadow: 0px 0px 7.12px 0.88px rgba(0, 0, 0, 0.26);
+    width: 5px;
+    height: 30px;
+    z-index: 1244;
+  }
+  .submenu li{
+    padding: 3px 0;
+  }
+  .submenu li a{
+    color: #000;
+    font-size: 12px;
+    transition: 0.4s;
+  }
+  .submenu li a:hover{
+    text-decoration: underline;
+  }
+  .topmenu > .submenu{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    
+    max-width: 150px;
+  }
+  .topmenu:hover .submenu{  
+    transform: rotateX(0deg);
+  }
+
+.header-zlata{
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+    z-index: 100;
+}
+.wrapper-burger{
+    display: none;
+}
