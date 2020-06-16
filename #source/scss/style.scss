@@ -73,6 +73,10 @@ $padd-container: 20;
 
 // <ОСНОВНОЙ БЛОК>-----------------------------------------------------------
 
+body.lock{
+    overflow: hidden;
+}
+
 // <section registration>
 .section-registration{
     background-color: #F6F6F3;
@@ -568,11 +572,10 @@ input:-ms-input-placeholder      {
     position: absolute;
     top: -23px;
     right: 16px;
-    z-index: 1;
 }
-.new-img{
-    z-index: 3;
-}
+// .new-img{
+//     z-index: 3;
+// }
 .mega-item{
     position: relative;
     margin: 0 -50px;
@@ -589,12 +592,12 @@ input:-ms-input-placeholder      {
     .slick-arrow.slick-prev{
         left: 0;
         background: url('../img/icons/left.png') 0 0 no-repeat;
-        z-index: 9999;
+        z-index: 999;
     }
     .slick-arrow.slick-next{
         right: 0;
         background: url('../img/icons/right.png') 0 0 no-repeat;
-        z-index: 9999;
+        z-index: 999;
     }
 }
 .slider-new{
@@ -608,12 +611,16 @@ input:-ms-input-placeholder      {
     top: 45%;
     left: -50px;
     cursor: pointer;
+    padding: 5px;
+    z-index: 1000;
 }
 .arrow-right{
     position: absolute;
     top: 45%;
     right: -50px;
     cursor: pointer;
+    padding: 5px;
+    z-index: 1000;
 }
 .new-desc{
     max-width: 191px;
@@ -656,6 +663,7 @@ input:-ms-input-placeholder      {
 }
 .bread-crumbs{
     display: flex;
+    flex-wrap: wrap;
     padding: 22px 0 13px 0;
 
     &__line{
@@ -947,11 +955,13 @@ input:-ms-input-placeholder      {
     &__main{
         padding-top: 51px;
         margin: 0 -48px;
+        display: flex;
+        justify-content: center;
     }
     &__item{
         padding: 0 48px;
         padding-bottom: 70px;
-        flex: 0 0 25%;
+        
     }
 }
 
