@@ -758,10 +758,11 @@ input:-ms-input-placeholder      {
 }
 .katalog-select{
     background: #F6F6F3;
-    padding: 33px 0 30px 0;
+    padding: 33px 0 10px 0;
 }
 .choice{
     display: flex; 
+    flex-wrap: wrap;
     &__li{
         flex: 0 0 calc(100% / 7);
         display: flex;
@@ -807,18 +808,25 @@ input:-ms-input-placeholder      {
 }
 
 .recently{
+    margin: 0 -48px;
     &__top{
+        padding: 0 20px;
         padding-bottom: 71px;
+        margin: 0 auto;   
     }
     &__main{
         display: flex;
         flex-wrap: wrap;
     }
     &__item{
+        padding: 0 48px;
         padding-bottom: 70px;
-        flex: 0 0 20%;
+    }
+    &__title{
+        text-align: center;
     }
 }
+
 // <section product>
 
 .product-bread{
@@ -1079,6 +1087,13 @@ input:-ms-input-placeholder      {
 .mob-menu:hover{
     color: #d7b56d;
 }
+.select-region{
+    white-space: nowrap;
+}
+.choice__li{
+    padding-bottom: 20px;
+}
+
 // </section inner>
 
 // </ОСНОВНОЙ БЛОК>----------------------------------------------------------
