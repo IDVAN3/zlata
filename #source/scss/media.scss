@@ -83,6 +83,13 @@
     
 }
 @media (max-width: 900px) {
+    .registration__title{
+        max-width: 225px;
+        padding: 20px 0 10px 0;
+    }
+    .registration__subtitle {
+        padding-bottom: 20px;
+    }
     .slider-summer .slick-dots {
         left: 50px;
     }
@@ -97,9 +104,6 @@
     }
     .registration{
         flex-direction: column;
-    }
-    .registration__subtitle{
-        padding-bottom: 46px;
     }
     .registration__item {
         flex: 0 0 100%;
@@ -120,14 +124,49 @@
     }
 }
 @media (max-width: 768px) {
-    .slider-summer .slick-dots {
-        bottom: 50px;
-        left: 50px;
+    .wrapper-icons img {
+        width: 24px;
     }
-    .summer-btn {
+    .header .header-input {
+        padding: 0 0 10px 0;
+    }
+    .pc-none{
+        display: flex;
+    }
+    .flex-top{
+        display: none;
+    }
+    .shop__title:before {
+        width: 17px;
+    }
+    .shop__title {
+        padding-left: 35px;
+    }
+    .slider-summer .slick-dots {
+        bottom: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .wrapper-summer-btn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+    .summer-btn{
+        position: static;
+
+        width: 150px;
+        padding: 10px 0;
+
         right: 30px;
         bottom: 15px;
     }
+
     .header-content-right__item .info-telephone {
         padding-left: 10px;
     }
@@ -139,7 +178,7 @@
         bottom: 0px;
     }
     .submenu{
-        padding: 8px 0;
+        padding: 8px 0 8px 10px;
     }
     .submenu li {
         padding: 5px 0;
@@ -174,7 +213,7 @@
         padding-bottom: 40px;
     }
     .header-content-right__item{
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
     body.lock{
 		overflow: hidden;
@@ -262,6 +301,12 @@
 }
 
 @media (max-width: 640px) {
+    .header-content-left__item {
+        padding-bottom: 30px;
+    }
+    .header-content {
+        padding-top: 20px;
+    }
     .stones {
         padding: 34px 0 0px 0;
     }
@@ -314,10 +359,6 @@
     }
 }
 @media (max-width: 600px) {
-    .slider-summer .slick-dots {
-        bottom: 40px;
-        left: 30px;
-    }
     .summer-btn {
         right: 3px;
         bottom: 3px;
@@ -326,21 +367,26 @@
         flex-wrap: wrap;
     }
     .slider-insta .slick-dots li {
-        margin: 0 10px;
-        margin-bottom: 10px;
+        margin: 5px 10px;
     }
     .new__navbar{
         .slick-track{
-            display: block;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: auto!important;
+            transform: translate3d(0px, 0px, 0px)!important;
         }
         .slick-list{
-            width: 100%;
+            height: auto!important;
         }
+        
     }
-    .new__li{
-        height: 56px;
-        width: 100%;
-        margin: 0 auto;
+    .new{
+        .new__li{
+            width: auto!important;
+            padding: 0px;
+        }
     }
     .arrow-left{
         top: 60%;
@@ -350,9 +396,8 @@
     }
 }
 @media (max-width: 480px) {
-    .slider-summer .slick-dots {
-        bottom: 30px;
-        left: 20px;
+    .summer__item img {
+        height: 150px;
     }
     .summer-btn {
         right: 0px;
@@ -404,16 +449,14 @@
     }
 }
 @media (max-width: 440px) {
-    .slider-summer .slick-dots {
-        bottom: 90%;
-        left: 10px;
-    }
     .slider-shop .slick-dots {
         flex-wrap: wrap;
     }
     .slider-shop .slick-dots li {
-        margin: 0 10px;
-        margin-bottom: 10px;
+        margin: 5px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .input-reg {
         width: 300px;

@@ -132,10 +132,6 @@
         border-bottom: 1px solid #000000;
         background-color: transparent;
     }
-    .flex-top{
-        display: flex;
-        align-items: start;
-    }
     input::-webkit-input-placeholder {
         font-size: 14px;
         font-weight: 400;
@@ -324,5 +320,8 @@
     z-index: 100;
 }
 .wrapper-burger{
+    display: none;
+}
+.pc-none{
     display: none;
 }

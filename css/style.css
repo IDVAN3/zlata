@@ -425,10 +425,6 @@ li.counter li:before {
   border-bottom: 1px solid #000000;
   background-color: transparent;
 }
-.header .flex-top {
-  display: flex;
-  align-items: start;
-}
 .header input::-webkit-input-placeholder {
   font-size: 14px;
   font-weight: 400;
@@ -627,6 +623,10 @@ li.counter li:before {
 }
 
 .wrapper-burger {
+  display: none;
+}
+
+.pc-none {
   display: none;
 }
 
@@ -836,7 +836,7 @@ input:-ms-input-placeholder {
 }
 .slider-shop .slick-dots li {
   list-style: none;
-  margin: 0 10px;
+  margin: auto 10px;
 }
 .slider-shop .slick-dots button {
   font-size: 0;
@@ -1622,7 +1622,7 @@ input:-ms-input-placeholder {
 
 .map {
   background-image: url(../img/map.png);
-  background-position: 0 0;
+  background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 267px;
@@ -1975,6 +1975,15 @@ input:-ms-input-placeholder {
   }
 }
 @media (max-width: 900px) {
+  .registration__title {
+    max-width: 225px;
+    padding: 20px 0 10px 0;
+  }
+
+  .registration__subtitle {
+    padding-bottom: 20px;
+  }
+
   .slider-summer .slick-dots {
     left: 50px;
   }
@@ -1993,10 +2002,6 @@ input:-ms-input-placeholder {
 
   .registration {
     flex-direction: column;
-  }
-
-  .registration__subtitle {
-    padding-bottom: 46px;
   }
 
   .registration__item {
@@ -2021,12 +2026,50 @@ input:-ms-input-placeholder {
   }
 }
 @media (max-width: 768px) {
+  .wrapper-icons img {
+    width: 24px;
+  }
+
+  .header .header-input {
+    padding: 0 0 10px 0;
+  }
+
+  .pc-none {
+    display: flex;
+  }
+
+  .flex-top {
+    display: none;
+  }
+
+  .shop__title:before {
+    width: 17px;
+  }
+
+  .shop__title {
+    padding-left: 35px;
+  }
+
   .slider-summer .slick-dots {
-    bottom: 50px;
-    left: 50px;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .wrapper-summer-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .summer-btn {
+    position: static;
+    width: 150px;
+    padding: 10px 0;
     right: 30px;
     bottom: 15px;
   }
@@ -2045,7 +2088,7 @@ input:-ms-input-placeholder {
   }
 
   .submenu {
-    padding: 8px 0;
+    padding: 8px 0 8px 10px;
   }
 
   .submenu li {
@@ -2090,7 +2133,7 @@ input:-ms-input-placeholder {
   }
 
   .header-content-right__item {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   body.lock {
@@ -2192,6 +2235,14 @@ input:-ms-input-placeholder {
   }
 }
 @media (max-width: 640px) {
+  .header-content-left__item {
+    padding-bottom: 30px;
+  }
+
+  .header-content {
+    padding-top: 20px;
+  }
+
   .stones {
     padding: 34px 0 0px 0;
   }
@@ -2250,11 +2301,6 @@ input:-ms-input-placeholder {
   }
 }
 @media (max-width: 600px) {
-  .slider-summer .slick-dots {
-    bottom: 40px;
-    left: 30px;
-  }
-
   .summer-btn {
     right: 3px;
     bottom: 3px;
@@ -2265,21 +2311,23 @@ input:-ms-input-placeholder {
   }
 
   .slider-insta .slick-dots li {
-    margin: 0 10px;
-    margin-bottom: 10px;
+    margin: 5px 10px;
   }
 
   .new__navbar .slick-track {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto !important;
+    transform: translate3d(0px, 0px, 0px) !important;
   }
   .new__navbar .slick-list {
-    width: 100%;
+    height: auto !important;
   }
 
-  .new__li {
-    height: 56px;
-    width: 100%;
-    margin: 0 auto;
+  .new .new__li {
+    width: auto !important;
+    padding: 0px;
   }
 
   .arrow-left {
@@ -2291,9 +2339,8 @@ input:-ms-input-placeholder {
   }
 }
 @media (max-width: 480px) {
-  .slider-summer .slick-dots {
-    bottom: 30px;
-    left: 20px;
+  .summer__item img {
+    height: 150px;
   }
 
   .summer-btn {
@@ -2359,18 +2406,15 @@ input:-ms-input-placeholder {
   }
 }
 @media (max-width: 440px) {
-  .slider-summer .slick-dots {
-    bottom: 90%;
-    left: 10px;
-  }
-
   .slider-shop .slick-dots {
     flex-wrap: wrap;
   }
 
   .slider-shop .slick-dots li {
-    margin: 0 10px;
-    margin-bottom: 10px;
+    margin: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .input-reg {

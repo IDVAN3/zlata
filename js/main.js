@@ -194,6 +194,7 @@ $(document).ready(function () {
                 breakpoint: 600,
                 settings:{
                     vertical: true,
+                    variableWidth: true,
                 }
             },
         ]
