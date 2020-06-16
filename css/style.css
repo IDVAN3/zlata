@@ -2234,7 +2234,24 @@ input:-ms-input-placeholder {
     padding-bottom: 0;
   }
 }
+.slider-shop .slick-dots {
+  justify-content: center;
+}
+
+.seventy {
+  width: 70%;
+}
+
+.thirty {
+  width: 30%;
+}
+
 @media (max-width: 640px) {
+  v .summer-btn {
+    padding: 5px 0;
+    width: 130px;
+  }
+
   .header-content-left__item {
     padding-bottom: 30px;
   }
@@ -2460,11 +2477,6 @@ input:-ms-input-placeholder {
 @media (max-width: 400px) {
   .input-reg {
     width: 260px;
-  }
-
-  .stones__top {
-    flex-direction: column;
-    align-items: center;
   }
 
   .pt {
