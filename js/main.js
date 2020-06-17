@@ -312,4 +312,17 @@ $(document).ready(function () {
         }   
      });
 
+
+     
+    let mql = window.matchMedia('all and (max-width: 900px)');
+    if (mql.matches) {
+        // Перемещаем параграф из product__title в mob-title
+    $('.mob-title').append( $('.product__title') );
+    } else {
+        // нет, размер окна более 479px 
+    }
+    
+
+
+
 });

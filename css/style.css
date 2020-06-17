@@ -794,7 +794,6 @@ input:-ms-input-placeholder {
 
 .shop__title {
   font-size: 18px;
-  letter-spacing: 3.33px;
   font-weight: bold;
   position: relative;
   padding-left: 82px;
@@ -1231,6 +1230,7 @@ input:-ms-input-placeholder {
 .katalog__top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 94px;
 }
 .katalog__title {
@@ -1309,7 +1309,6 @@ input:-ms-input-placeholder {
 
 .clean {
   font-weight: 300;
-  line-height: 18px;
   color: #000000;
   position: relative;
 }
@@ -1359,13 +1358,11 @@ input:-ms-input-placeholder {
 .recently__main {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -48px;
 }
 .recently__item {
   padding: 0 48px;
   padding-bottom: 70px;
-}
-.recently__title {
-  text-align: center;
 }
 
 .product-bread {
@@ -1462,6 +1459,7 @@ input:-ms-input-placeholder {
 }
 .characteristics__slice {
   display: flex;
+  justify-content: space-between;
 }
 .characteristics__item {
   flex: 0 0 50%;
@@ -1469,6 +1467,9 @@ input:-ms-input-placeholder {
   padding-bottom: 20px;
   color: #000000;
   transition: 0.4s;
+}
+.characteristics__item:nth-child(2n) {
+  margin-left: 100px;
 }
 
 .wrapper-slice {
@@ -1931,6 +1932,14 @@ input:-ms-input-placeholder {
   }
 }
 @media (max-width: 1200px) {
+  .recently__main {
+    padding: 0 20px;
+  }
+
+  .wrapper-all .icon-bottom {
+    right: 35%;
+  }
+
   .summer-btn {
     right: 200px;
   }
@@ -1959,7 +1968,7 @@ input:-ms-input-placeholder {
 }
 @media (max-width: 1024px) {
   .wrapper-all .icon-bottom {
-    right: 32%;
+    right: 25%;
   }
 
   .summer-btn {
@@ -1969,8 +1978,21 @@ input:-ms-input-placeholder {
   .df-fdc {
     padding-left: 50px;
   }
+
+  .character {
+    padding-left: 30px;
+  }
 }
 @media (max-width: 992px) {
+  .wrapper-all .icon-bottom {
+    right: 23%;
+  }
+
+  .btn {
+    width: 240px;
+    padding: 15px 0;
+  }
+
   .link__li {
     min-width: 185px;
   }
@@ -2001,6 +2023,22 @@ input:-ms-input-placeholder {
   }
 }
 @media (max-width: 900px) {
+  .characteristics__body {
+    max-width: 100%;
+  }
+
+  .wrapper-all .icon-bottom {
+    right: 45%;
+  }
+
+  .section-product {
+    padding-top: 45px;
+  }
+
+  .mob-title {
+    padding-bottom: 20px;
+  }
+
   .product__title {
     text-align: center;
   }
@@ -2025,6 +2063,7 @@ input:-ms-input-placeholder {
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
+    padding-left: 0;
   }
 
   .characteristics {
@@ -2096,6 +2135,10 @@ input:-ms-input-placeholder {
   }
 }
 @media (max-width: 768px) {
+  .bread {
+    padding-bottom: 0;
+  }
+
   .recently__top {
     padding-bottom: 31px;
   }
@@ -2360,13 +2403,12 @@ input:-ms-input-placeholder {
   }
 }
 @media (max-width: 640px) {
-  .recently__main {
-    justify-content: center;
+  .wrapper-all .icon-bottom {
+    right: 40%;
   }
 
-  .btn {
-    width: 240px;
-    padding: 15px 0;
+  .recently__main {
+    justify-content: center;
   }
 
   .summer-btn {
@@ -2440,6 +2482,10 @@ input:-ms-input-placeholder {
   }
 }
 @media (max-width: 600px) {
+  .wrapper-all .icon-bottom {
+    right: 45%;
+  }
+
   .summer-btn {
     right: 3px;
     bottom: 3px;
@@ -2480,10 +2526,23 @@ input:-ms-input-placeholder {
 }
 @media (max-width: 500px) {
   .wrapper-all .icon-bottom {
-    right: 27%;
+    right: 26%;
   }
 }
 @media (max-width: 480px) {
+  .katalog__title {
+    font-size: 16px;
+    padding-left: 50px;
+  }
+
+  .katalog__title:before {
+    width: 30px;
+  }
+
+  .characteristics__item:nth-child(2n) {
+    margin-left: 50px;
+  }
+
   .summer__item img {
     height: 150px;
   }
@@ -2609,7 +2668,7 @@ input:-ms-input-placeholder {
 }
 @media (max-width: 430px) {
   .wrapper-all .icon-bottom {
-    right: 13%;
+    right: 40%;
   }
 }
 @media (max-width: 400px) {
@@ -2618,17 +2677,12 @@ input:-ms-input-placeholder {
   }
 
   .wrapper-all .icon-bottom {
-    right: 5%;
-  }
-}
-@media (max-width: 370px) {
-  .wrapper-all .icon-bottom {
-    right: 2%;
+    right: 30%;
   }
 }
 @media (max-width: 360px) {
   .wrapper-all .icon-bottom {
-    right: 0%;
+    right: 35%;
   }
 
   .header .header-input {

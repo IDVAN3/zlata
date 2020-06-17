@@ -241,7 +241,7 @@ input:-ms-input-placeholder      {
 .shop{
     &__title{
         font-size: 18px;
-        letter-spacing: 3.33px;
+        // letter-spacing: 3.33px;
         font-weight: bold;
 
         position: relative;
@@ -693,6 +693,7 @@ input:-ms-input-placeholder      {
     &__top{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding-bottom: 94px;
     }
     &__title{
@@ -771,7 +772,6 @@ input:-ms-input-placeholder      {
 }
 .clean{
     font-weight: 300;
-    line-height: 18px;
     color: #000000;
     position: relative;
 }
@@ -817,14 +817,15 @@ input:-ms-input-placeholder      {
     &__main{
         display: flex;
         flex-wrap: wrap;
+        margin: 0 -48px;
     }
     &__item{
         padding: 0 48px;
         padding-bottom: 70px;
     }
-    &__title{
-        text-align: center;
-    }
+    // &__title{
+    //     text-align: center;
+    // }
 }
 
 // <section product>
@@ -917,6 +918,7 @@ input:-ms-input-placeholder      {
     }
     &__slice{
         display: flex;
+        justify-content: space-between;
     }
     &__item{
         flex: 0 0 50%;
@@ -925,6 +927,9 @@ input:-ms-input-placeholder      {
         color: #000000;
         transition: 0.4s;
     }  
+    &__item:nth-child(2n){
+        margin-left: 100px;
+    }
 }
 .wrapper-slice{
     display: none;
